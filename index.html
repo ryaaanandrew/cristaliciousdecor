@@ -15,27 +15,26 @@
         <h1>Cristalicious Decor</h1>
         <span>wedding & events</span>
     </div>
-    <ul class="navigation__links">
-      <li class="navigation__linkItems">Home</li>
-      <li class="navigation__linkItems">About</li>
-      <li class="navigation__linkItems">Services</li>
-      <li class="navigation__linkItems">About</li>
-      <li class="navigation__linkItems">Gallery</li>
-      <li class="navigation__linkItems">Contact</li>
+    <ul class="navigation__list">
+        <li class="navigation__linkItem"><a href="#">Home</a></li>
+        <li class="navigation__linkItem"><a href="#services">Services</a></li>
+        <li class="navigation__linkItem"><a href="#about">About</a></li>
+        <li class="navigation__linkItem"><a href="#gallery">Gallery</a></li>
+        <li class="navigation__linkItem"><a href="#contact">Contact</a></li>
     </ul>
   </nav>
-  <header class="header">
+  <header class="header" id="header">
     <div class="header__bg"></div>
     <div class="header__overlay">
       <div class="header__title">
         <h1>Cristalicious Decor</h1>
         <span>wedding & events</span>
-        <div class="header__btn">Contact</div>
+        <div class="header__btn"><a href="#contact">Contact</a></div>
       </div>
     </div>
   </header>
 
-  <div class="services">
+  <div class="services" id="services">
     <div class="services__header">
       <h1>What we offer</h1>
       <p> 
@@ -70,7 +69,7 @@
     </div>
   </div>
 
-  <div class="about">
+  <div class="about" id="about">
     <h1>About me</h1>
     <div class="about__content">
       <div class="about__left">
@@ -83,8 +82,13 @@
     </div>
   </div>
 
-  <div class="gallery">
+  <div class="gallery" id="gallery">
       <div id="galleryCarousel" class="gallery__images carousel slide carousel-fade" data-ride="carousel">
+        <div class="miniNav">
+          <div class="miniNav__icon miniNav__icon--red"></div>
+          <div class="miniNav__icon miniNav__icon--grey"></div>
+          <div class="miniNav__icon miniNav__icon--green"></div>
+        </div>
         <h1>Gallery</h1>
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -114,21 +118,27 @@
       </div>
   </div>
 
-  <div class="contact">
+  <div class="contact" id="contact">
     <div class="contact__content">
       <div class="contact__left">
         <h1>Contact</h1>
         <span>(416) 892-6104</span>
         <div class="contact__icons">
-          <div class="contact__card contact__card--instagram">
-            <i class="fab fa-instagram fa-4x"></i>
-          </div>
-          <div class="contact__card contact__card--facebook">
-              <i class="fab fa-facebook-square fa-4x"></i>
-          </div>
-          <div class="contact__card contact__card--email">
-              <i class="far fa-envelope fa-4x"></i>
-          </div>
+          <a href="https://www.instagram.com/cristaliciousdecor/">
+            <div class="contact__card contact__card--instagram">
+              <i class="fab fa-instagram fa-4x"></i>
+            </div>
+          </a>
+          <a href="https://www.facebook.com/CristaliciousDecor/">
+            <div class="contact__card contact__card--facebook">
+                <i class="fab fa-facebook-square fa-4x"></i>
+            </div>
+          </a>
+          <a href="mailto: duarte.christabell@gmail.com">
+            <div class="contact__card contact__card--email">
+                <i class="far fa-envelope fa-4x"></i>
+            </div>
+          </a>
        </div>
       </div>
       <div class="contact__right">

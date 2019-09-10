@@ -1,17 +1,27 @@
 .navigation {
-  padding: 1rem 0;
   background-color: $color-primary;
   text-align: center;
-  position: relative;
-  z-index: 10;
+  position: fixed;
+  width: 100%;
+  z-index: 20;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 
+  @include respond(tab-port) {
+    justify-content: center;
+    flex-direction: column;
+  }
+
   &__left {
     margin: 1rem 2rem;
     margin-left: 7rem;
+
+    @include respond(tab-port) {
+      margin-left: 0;
+      padding-bottom: 3rem;
+    }
 
     & h1 {
       font-size: 3rem;
@@ -23,14 +33,27 @@
     }
   }
 
-  &__links {
-    width: 40%;
-    font-size: 1.7rem;
-
+  &__list {
+    text-align: center;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
   }
+
+  &__linkItem {
+    text-align: center;
+    font-size: 1.7rem;
+    padding: .5rem 1rem;
+    transition: all .3s ease-out;
+    border: 1px solid transparent;
+    margin-right: 3rem;
+    
+    &:hover {
+     border-bottom: 1px solid black;
+    }
+  }
+
 
   &::after {
     content: "";
@@ -43,5 +66,9 @@
     transform: skewY(-3deg);
     transform-origin: 100%;
     z-index: -10;
+
+    @include respond(tab-port) {
+      display: none;
+    }  
   }
 }

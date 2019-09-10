@@ -1,5 +1,5 @@
 .contact {
-  padding: 20rem 0;
+  padding: 16rem 0;
   background-color: white;
   position: relative;
   color: white;
@@ -16,6 +16,10 @@
     justify-content: space-around;
     align-items: center;
     z-index: 15;
+
+    @include respond(tab-port) {
+      flex-direction: column-reverse;
+    }
   }
 
   &__left {
@@ -23,6 +27,10 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+
+    @include respond(tab-port) {
+      margin-top: 6rem;
+    }
 
     & > h1 {
       font-size: 3rem;
@@ -51,6 +59,10 @@
       width: 110%;
       font-size: 4.5rem;
       z-index: 10;
+
+      @include respond(tab-port) {
+        font-size: 3.5rem;
+      }
     }    
     
     & > span {
@@ -66,6 +78,11 @@
     height: 30rem;
     width: 30rem;
     border-radius: 50%;
+
+    @include respond(tab-port) {
+      height: 25rem;
+      width: 25rem;
+    }
   }
 
   &__icons {

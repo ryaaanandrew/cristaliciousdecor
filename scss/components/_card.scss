@@ -15,5 +15,11 @@
 
   &__content {
     font-size: 1.7rem;
+
+    & > p {
+      @include respond(tab-land) {
+        margin-bottom: 4rem;
+      }
+    }
   }
 }
