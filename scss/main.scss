@@ -1,0 +1,19 @@
+$color-primary: #f7e7ce;
+
+$color-dark-1: rgb(20, 20, 20);
+
+@import 'typography.scss';
+@import './layout/navigation';
+@import './layout/header';
+@import './layout/services';
+@import './layout/about';
+@import './layout/gallery';
+@import './layout/contact';
+
+@import './components/card';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}

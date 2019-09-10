@@ -1,0 +1,47 @@
+.navigation {
+  padding: 1rem 0;
+  background-color: $color-primary;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__left {
+    margin: 1rem 2rem;
+    margin-left: 7rem;
+
+    & h1 {
+      font-size: 3rem;
+    }
+
+    & > span {
+      font-size: 1.5rem;
+      letter-spacing: 3px;
+    }
+  }
+
+  &__links {
+    width: 40%;
+    font-size: 1.7rem;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  &::after {
+    content: "";
+    background-color: inherit;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 200%;
+    transform: skewY(-3deg);
+    transform-origin: 100%;
+    z-index: -10;
+  }
+}
