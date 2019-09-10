@@ -1,7 +1,7 @@
 .about {
+  padding: 10rem 0;
   margin-top: 10rem;
   background-color: $color-primary;
-  height: 75vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -10,6 +10,7 @@
 
   & > h1 {
     font-size: 4rem;
+    margin-bottom: 5rem;
   }
 
   &::before {
@@ -34,7 +35,6 @@
     transform-origin: 100%;
     transform: skewY(-3deg);
     background-color: inherit;
-    z-index: -10;
   }
 
   &__content {
@@ -42,6 +42,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    z-index: 10;
   }
 
   &__left {
@@ -53,8 +54,8 @@
 
   &__middle {
     width: .5px;
-    border-left: 1px solid #ffd490;
-    height: 80%;
+    border-left: 1px solid rgba(47, 47, 47, 0.534);
+    height: 50rem;
   }
 
   &__right {

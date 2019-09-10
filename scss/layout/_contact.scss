@@ -1,0 +1,115 @@
+.contact {
+  padding: 20rem 0;
+  background-color: white;
+  position: relative;
+  color: white;
+  color: black;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  &__content {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 15;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    & > h1 {
+      font-size: 3rem;
+      align-self: flex-start;
+    }
+    & > span {
+      align-self: flex-start;
+      font-family: 'Raleway', serif;
+      font-size: 2.2rem;
+      margin-bottom: 3rem;
+      letter-spacing: 1.5px;
+    }
+  }
+
+  &__right {
+    width: 40%;
+    text-align: center;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & > h1 {
+      width: 110%;
+      font-size: 4.5rem;
+      z-index: 10;
+    }    
+    
+    & > span {
+      width: 110%;
+      font-size: 1.5rem;
+      z-index: 10;
+    }
+  }
+
+  &__shape {
+    position: absolute;
+    background-color: $color-primary;
+    height: 30rem;
+    width: 30rem;
+    border-radius: 50%;
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    color: white;
+  }
+
+  &__card {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    margin-right: 2rem;
+
+    &::last-child {
+      margin-right: 0;
+    }
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--instagram {
+      background-color: #E1306C;
+    }
+    &--facebook {
+      background-color: #3b5998;
+    }
+    &--email {
+      background-color: #5851DB;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 20rem;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: skewY(3deg);
+    transform-origin: 100%;
+    background-color: inherit;
+    z-index: 10;
+  }
+}
